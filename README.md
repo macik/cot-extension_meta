@@ -1,43 +1,68 @@
-Test
+Cotonti Extensions META info
+============================
 
-Code block:
+This project intend to develop some kind of [Cotonti][] Extension 
+developers style guide.
 
-```php
-$test = 'code';
-```
+> Same `README.md` translated to other languages:
+> * [russian](http://www.)
+>
 
-Another code block:
+Preface
+-------
 
-    $test = 'code';
+As further development plans includes creation of unified Extension repository for [Cotonti] we
+need, first of all, makes development standards. And improve current quality of 
+code (mainly Extensions code) to meet this standard as a second step. 
+Due to Cotonti wide development and grown improvements many Extensions become obsolete very fast
+and we need to track it compatibiliti with Cotonti itself and each other.
 
-```php $a = 'b'; ```
 
-+ item
-+ item
-+ item
+Aims of project
+---------------
 
-test test text
+The main aim is to create unified rules for [Cotonti][] developers to help making good and reliable
+code. The base orientation is Extension and Modules code. 
+The basic rules and documentation for development is described in [part 3][doc3] and [part 4][doc4] of [Cotonti][] 
+documentation plan and must be used as basis.
+But we must go deeper - to unify all Extensions (plugins) for further use in repository.
+It intends some meta information for Extensions that may:
 
-- item
-- item
-- item
+* describe it 
+	* breif description
+	* install notes
+	* how-to's
+	* screenshots 
+	* Author name and links
+	* links to source code or download source
+* allow to add l10n of descriptions
+* specify dependencies
+	* for Cotonti extensions and modules
+	* for external libs and plugins, such as jQueryUI, underscore, require.js, etc
+* compatibility info for Cotonti versions 
+* optionally changelogs 
+ 
 
-test test text
+What benefits does it reveal?
+-----------------------------
 
-1. item
-1. item
-1. item
+First of all, it makes Extensions more accessible and easy-to-use for end user. There would be no 
+need to download to try, then asking on forum for how-to, then throw out due versions 
+incompatibility. 
+User must be allowed to easy search, getting full extension info and «one click» installs it.
 
-test test text
+The second reason for meta information is to simplify manage of extensions within expected repository.
 
-1. item
-2. item
-3. item
+What we need to do?
+-------------------
 
-test test text
+* specify types range and classes for storing information
+* define methods to store this information within Extension bundle
+* define types for storing bundles (achives/git repositories/something else)
+* define formats for storing certain kind of information (for descriptions, for DEPS, for l10n, etc)
 
-* item
-* item
-* item
 
+[Cotonti]: http://www.cotonti.com "Cotonti.com"
+[doc3]: http://www.cotonti.com/docs/ext/ "Extending Cotonti"
+[doc4]: http://www.cotonti.com/docs/devel/ "Developer Guide"
 
