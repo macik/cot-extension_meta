@@ -16,16 +16,16 @@ Short brief of updates in this version, inportant notes, compatibility info, etc
 
 Then list of changes:
 
-+ Addition feature `mega_botton`
-- Bug fixing
-* Some other changes
++ Addition feature (marked with «\+» in list)
+- Bug fixed (marked with «\-» in list)
+* Some other changes (marked with «\*» in list)
 
 ### v1.2
 
 Added backwards compatibility for older Siena versions.
 
-- Bug «missing admin *{FOTTER_RC}*» fixed
-+ Added function `cot_admin_config_get_titles()`
+- Fixed missing *{FOTTER_RC}* tag
++ Added function `cot_my_function()`
 * **XTemplate** moved to `system` folder
 
 ### v1.1
