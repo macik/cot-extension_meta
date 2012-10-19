@@ -12,3 +12,20 @@ Another code block:
 
 ```php $a = 'b'; ```
 
++ item
++ item
++ item
+
+- item
+- item
+- item
+
+1. item
+1. item
+1. item
+
+1. item
+2. item
+3. item
+
+
