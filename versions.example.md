@@ -1,6 +1,10 @@
 title_of_plugin
 ===============
 
+> This file is example of formating Changelogs for 
+> [Cotonti](http://www.cotonti.com) Extensions and Modules. 
+> It describes basic structure for `versions.md` file.
+
 Short description of plugin (1-2 lines).
 
 Changelog
@@ -20,9 +24,9 @@ Then list of changes:
 
 Added backwards compatibility for older Siena versions.
 
-- Fix for missing admin *{FOTTER_RC}*
-+ Added Fix for missing `cot_admin_config_get_titles()`
-* Improved  **XTemplate**
+- Bug «missing admin *{FOTTER_RC}*» fixed
++ Added function `cot_admin_config_get_titles()`
+* **XTemplate** moved to `system` folder
 
 ### v1.1
 
@@ -37,7 +41,7 @@ Adding advanced configuration
 
 + Added lang selection with default lang
 + Added widget type selection
-+ Added ability to use CDN or local lib 
++ Added ability to use [Yandex CDN](http://yandex.st) or local lib 
 
 ### v0.5
 
