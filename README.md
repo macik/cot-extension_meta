@@ -10,4 +10,5 @@ Another code block:
 
     $test = 'code';
 
+```php $a = 'b'; ```
 
