@@ -4,10 +4,6 @@ Cotonti Extensions META info
 This project intend to develop some kind of [Cotonti][] Extension 
 developers style guide.
 
-> Same `README.md` translated to other languages:
-> * [russian](http://www.)
->
-
 Preface
 -------
 
@@ -60,6 +56,23 @@ What we need to do?
 * define methods to store this information within Extension bundle
 * define types for storing bundles (achives/git repositories/something else)
 * define formats for storing certain kind of information (for descriptions, for DEPS, for l10n, etc)
+
+
+Current progress
+----------------
+
+Here you can find links to different parts of proposed standard:
+
+* [README.example.md](https://github.com/macik/cot-extension_meta/blob/master/README.example.md) — example of Extension main desctiption file.
+* [versions.example.md](https://github.com/macik/cot-extension_meta/blob/master/versions.example.md) — example of Extension change log file
+
+Docs translation
+----------------
+
+Any translated versions of this documentation you can find in `lang` folder within this 
+repository. As example:
+
+* [`README.md` in russian](https://github.com/macik/cot-extension_meta/blob/master/lang/ru/README_ru.md)
 
 
 [Cotonti]: http://www.cotonti.com "Cotonti.com"
