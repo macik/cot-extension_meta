@@ -1,66 +1,88 @@
-Метаинформация расширений для Cotonti
+Метаинформация для расширений Cotonti
 =====================================
 
-This project intend to develop some kind of [Cotonti][] Extension 
-developers style guide.
-
-> Same `README.md` translated to other languages:
-> * [russian](http://www.)
->
-
-Preface
--------
-
-As further development plans includes creation of unified Extension repository for [Cotonti] we
-need, first of all, makes development standards. And improve current quality of 
-code (mainly Extensions code) to meet this standard as a second step. 
-Due to Cotonti wide development and grown improvements many Extensions become obsolete very fast
-and we need to track it compatibiliti with Cotonti itself and each other.
-
-
-Aims of project
----------------
-
-The main aim is to create unified rules for [Cotonti][] developers to help making good and reliable
-code. The base orientation is Extension and Modules code. 
-The basic rules and documentation for development is described in [part 3][doc3] and [part 4][doc4] of [Cotonti][] 
-documentation plan and must be used as basis.
-But we must go deeper - to unify all Extensions (plugins) for further use in repository.
-It intends some meta information for Extensions that may:
-
-* describe it 
-	* breif description
-	* install notes
-	* how-to's
-	* screenshots 
-	* Author name and links
-	* links to source code or download source
-* allow to add l10n of descriptions
-* specify dependencies
-	* for Cotonti extensions and modules
-	* for external libs and plugins, such as jQueryUI, underscore, require.js, etc
-* compatibility info for Cotonti versions 
-* optionally changelogs 
+Этот проект предполагает создание единого стадарта для разработчиков расширений [Cotonti][].
+> Здесь и далее в тексте под словом «расширение» подразумевается весь набор возможных расширений 
+для CMS: плагины, модули, темы оформления. Там где идет речь конкретно о Расширениях (плагинах)
+старался употреблять это слово с заглавной буквы.
  
 
-What benefits does it reveal?
------------------------------
+Вводная
+-------
 
-First of all, it makes Extensions more accessible and easy-to-use for end user. There would be no 
-need to download to try, then asking on forum for how-to, then throw out due versions 
-incompatibility. 
-User must be allowed to easy search, getting full extension info and «one click» installs it.
+В связи с быстрыми темпами развития Cotonti и его внутренней структуры на текущий момент мы имеем 
+большую фрагментацию расширений (плагинов) по зависимостям от ветки разработки (Genoa/Siena) и
+от конкретных версий самой ветки. Плагины устаревают, плагины не совместимы, некоторые плохо 
+документированы.
 
-The second reason for meta information is to simplify manage of extensions within expected repository.
+В перспективе разработки CMF [Cotonti][] стоит создание единого хранилища (репозитория) для 
+модулей расширений, и возможно тем оформления. Это подразумевает четкую структуру и единую базу.
 
-What we need to do?
+Как первый шаг в этом направлении предполагается выработать 
+некие единые стандарты для разработчиков и тех, кто осуществляет поддержку расширений.
+И как второй шаг привести в соответсвие с этими стандартами текущие наработки.
+
+
+Цели проекта
+------------
+
+Цель создать единые стандарты создания и оформления расширений для разработчиков на [Cotonti][],
+что поможет все создавать хороший и надежный код. Основное внимание предполагается уделить 
+Расширениям и Модулям для Котонти (в перспективе и темам оформления).
+Основные правила и инструкции для разработчиков описанные в [разделе 3][doc3] и [разделе 4][doc4]
+документаци для [Cotonti][] предполагается использовать как фундамент.
+Однако в дальнейшем, для возможности использовать расширения в едином репозитории 
+необходима информация описания оформленная в едином формате.
+Т.н. мета-информация, которая поможет 
+
+* описывать расширение (модуль, тему)
+	* краткое описание
+	* инструкции по установке
+	* настройка
+	* скриншоты 
+	* информация об авторе и сопутствующие ссылки
+	* ссылки на исходнй код, или архив для загрузки
+* использовать локализованные версии описаний
+* отслеживать зависимости
+	* от расширений и модулей Cotonti
+	* от библиотек сторонних производителей, таких как jQueryUI, underscore, require.js и т.д.
+* отслеживать совместимость с различными версиями самого Cotonti 
+* прослеживать историю развития (изменения) плигина (расширения)
+ 
+Какая от этого польза?
+----------------------
+
+Во-первых это сделает расширения более доступными и используемыми для конечного пользователя.
+Не будет необходимости скачивать файл, затем спрашивать на форуме как его настроить, а потом 
+удалять т.к. выясняется, что он не совместим с той или иной версией. У пользователя будет возможность
+получить большую часть информации до установки и установить расширение без мучений.
+
+Во-вторых, данная информация позволит проще управлять списком расширений в репозитории.
+
+Что для этого надо?
 -------------------
 
-* specify types range and classes for storing information
-* define methods to store this information within Extension bundle
-* define types for storing bundles (achives/git repositories/something else)
-* define formats for storing certain kind of information (for descriptions, for DEPS, for l10n, etc)
+* надо классифицировать необходимую информацию и определить ее тип
+* определить методы хранения этой информации внутри установочного «контейнера» расширения
+* определить тип для «контейнера» (архив/репозиторий кода/что-то еще)
+* определить конечный формат для конкретного типа информации (описаний, зависимостей, локализаций)
 
+Текущее состояние
+-----------------
+
+В приведенном списке вы сможете найти ссылки на файлы описывающие различные 
+части разрабатываемого стандарта:
+
+* [README.example.md](https://github.com/macik/cot-extension_meta/blob/master/README.example.md) — пример основного файла с описанием расшриния.
+* [versions.example.md](https://github.com/macik/cot-extension_meta/blob/master/versions.example.md) — пример файла с описанием изменения версий.
+
+Локализация файлов проекта
+--------------------------
+
+Основная разработка файлов данного проекта предполагается на английском языке. Данные файлы 
+содержаться в корневом каталоге проекта. 
+Все локализованные версии файлов даны «для справки»
+и располагаются в соответствующих подкаталогах папки `lang` данного репозитория.
 
 [Cotonti]: http://www.cotonti.com "Cotonti.com"
 [doc3]: http://www.cotonti.com/docs/ext/ "Extending Cotonti"

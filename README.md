@@ -72,7 +72,7 @@ Docs translation
 Any translated versions of this documentation you can find in `lang` folder within this 
 repository. As example:
 
-* [`README.md` in russian](https://github.com/macik/cot-extension_meta/blob/master/lang/ru/README_ru.md)
+* [`README.md`](https://github.com/macik/cot-extension_meta/blob/master/lang/ru/README_ru.md) — in russian
 
 
 [Cotonti]: http://www.cotonti.com "Cotonti.com"
